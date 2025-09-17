@@ -42,7 +42,7 @@ const products: Product[] = [
       { id: 'img1-1', url: 'https://picsum.photos/seed/prod1-main/800/800', alt: 'Minimalist ceramic vase on white background', type: 'main', hint: 'minimalist ceramic vase' },
       { id: 'img1-2', url: 'https://picsum.photos/seed/prod1-life/800/800', alt: 'Ceramic vase with flowers on a wooden table', type: 'lifestyle', hint: 'vase on table' },
       { id: 'img1-3', url: 'https://picsum.photos/seed/prod1-detail/800/800', alt: 'Close up of the ceramic vase texture', type: 'detail', hint: 'ceramic texture' },
-      { id: 'img1-4', url: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4', alt: 'Video of the vase being made', type: 'video', hint: 'pottery making' },
+      { id: 'img1-4', url: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4', alt: 'Video of the vase being made', type: 'video', hint: 'pottery making' },
     ],
     specifications: [
         { name: 'Dimensions', value: '8" H x 4" W' },
