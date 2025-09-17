@@ -1,0 +1,64 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "An artist's hands shaping a piece of clay on a pottery wheel.",
+      "imageUrl": "https://picsum.photos/seed/hero1/1920/1080",
+      "imageHint": "artisanal pottery"
+    },
+    {
+      "id": "collection-1",
+      "description": "A stylish and modern living room with minimalist decor and natural light.",
+      "imageUrl": "https://picsum.photos/seed/coll1/800/1000",
+      "imageHint": "modern living room"
+    },
+    {
+      "id": "collection-2",
+      "description": "A close-up of a delicate handcrafted gold necklace on a person's neck.",
+      "imageUrl": "https://picsum.photos/seed/coll2/800/1000",
+      "imageHint": "delicate gold necklace"
+    },
+    {
+      "id": "collection-3",
+      "description": "A woman wearing a flowing, sustainable linen dress in a natural outdoor setting.",
+      "imageUrl": "https://picsum.photos/seed/coll3/800/1000",
+      "imageHint": "woman wearing linen dress"
+    },
+    {
+      "id": "product-1",
+      "description": "A minimalist white ceramic vase with a single dry stem.",
+      "imageUrl": "https://picsum.photos/seed/prod1/600/600",
+      "imageHint": "minimalist ceramic vase"
+    },
+    {
+      "id": "product-2",
+      "description": "A cozy, textured linen throw blanket draped over a chair.",
+      "imageUrl": "https://picsum.photos/seed/prod2/600/600",
+      "imageHint": "cozy linen blanket"
+    },
+    {
+      "id": "product-3",
+      "description": "A person's hand wearing a simple and elegant gold signet ring.",
+      "imageUrl": "https://picsum.photos/seed/prod3/600/600",
+      "imageHint": "gold ring hand"
+    },
+    {
+      "id": "product-4",
+      "description": "A woman carrying a stylish, handcrafted brown leather tote bag.",
+      "imageUrl": "https://picsum.photos/seed/prod4/600/600",
+      "imageHint": "woman leather bag"
+    },
+    {
+      "id": "product-5",
+      "description": "A hand-poured scented candle in a stylish amber glass jar.",
+      "imageUrl": "https://picsum.photos/seed/prod5/600/600",
+      "imageHint": "amber jar candle"
+    },
+    {
+      "id": "product-6",
+      "description": "A large abstract painting with bold colors hanging on a white wall.",
+      "imageUrl": "https://picsum.photos/seed/prod6/600/600",
+      "imageHint": "abstract painting"
+    }
+  ]
+}

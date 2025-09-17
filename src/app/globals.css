@@ -1,0 +1,93 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 43 100% 50%; /* Gold */
+    --primary-foreground: 0 0% 10%; /* Charcoal for text on gold */
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 0 0% 53.3%; /* #888888 */
+    --accent: 43 100% 50%; /* Gold */
+    --accent-foreground: 0 0% 10%; /* Charcoal for text on gold */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 43 100% 50%; /* Gold */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 10%; /* #1A1A1A */
+    --foreground: 0 0% 96.1%; /* #F5F5F5 */
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 96.1%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 96.1%;
+    --primary: 43 100% 50%; /* Gold #FFB800 */
+    --primary-foreground: 0 0% 10%; /* Charcoal for text on gold */
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 96.1%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 53.3%; /* #888888 */
+    --accent: 43 100% 50%; /* Gold */
+    --accent-foreground: 0 0% 10%; /* Charcoal */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 43 100% 50%; /* Gold */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(1rem) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+
+  @keyframes slide-down-fade {
+    from { opacity: 0; transform: translateY(-2rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fade-in {
+    animation: fade-in-up 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
