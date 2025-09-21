@@ -5,6 +5,15 @@ import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 import { Button } from '@/components/ui/button';
 import { Loader2 } from 'lucide-react';
+import { getAllProducts } from '@/lib/product-data';
+
+export async function generateStaticParams() {
+  const products = getAllProducts();
+  const categories = new Set(products.map(p => p.category.slug));
+  return Array.from(categories).map(category => ({
+    category,
+  }));
+}
 
 type CategoryPageProps = {
   params: {
