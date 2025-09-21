@@ -10,6 +10,8 @@ import { getAllProducts } from '@/lib/product-data';
 export async function generateStaticParams() {
   const products = getAllProducts();
   const categories = new Set(products.map(p => p.category.slug));
+  // Add 'new-arrivals' to the set of categories to be generated.
+  categories.add('new-arrivals');
   return Array.from(categories).map(category => ({
     category,
   }));
