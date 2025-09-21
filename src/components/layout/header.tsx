@@ -7,7 +7,7 @@ import { Search, User, ShoppingCart, X, Menu, Lock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger } from '@/components/ui/sheet';
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
@@ -43,6 +43,12 @@ const Header = () => {
         </Button>
       </SheetTrigger>
       <SheetContent side="left">
+        <SheetHeader>
+          <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+          <SheetDescription className="sr-only">
+            Main navigation links for Verve Curations
+          </SheetDescription>
+        </SheetHeader>
         <div className="flex flex-col space-y-4 p-6">
            <Link href="/" className="text-xl font-bold font-headline text-foreground mb-4">
             Verve Curations
