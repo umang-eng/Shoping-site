@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import Breadcrumb from '@/components/sections/pdp/breadcrumb';
 import ImageGallery from '@/components/sections/pdp/image-gallery';
@@ -6,13 +7,20 @@ import ProductDetails from '@/components/sections/pdp/product-details';
 import Recommendations from '@/components/sections/pdp/recommendations';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
-import { getProductBySlug, getRelatedProducts } from '@/lib/product-data';
+import { getProductBySlug, getRelatedProducts, getAllProducts } from '@/lib/product-data';
 
 type ProductPageProps = {
   params: {
     slug: string;
   };
 };
+
+export async function generateStaticParams() {
+  const products = getAllProducts();
+  return products.map((product) => ({
+    slug: product.slug,
+  }));
+}
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
   const product = getProductBySlug(params.slug);
