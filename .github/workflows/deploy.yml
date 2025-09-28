@@ -26,7 +26,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: next build
+        run: npm run build
 
       - name: Create .nojekyll file
         run: touch ./out/.nojekyll
