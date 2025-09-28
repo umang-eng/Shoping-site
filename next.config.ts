@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   output: 'export',
   basePath: '/Shoping-site',
   assetPrefix: '/Shoping-site/',
+  trailingSlash: true,
   typescript: {
     ignoreBuildErrors: true,
   },
