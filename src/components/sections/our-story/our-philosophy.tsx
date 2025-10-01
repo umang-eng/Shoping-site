@@ -54,7 +54,7 @@ const OurPhilosophy = () => {
             <h2 className="text-3xl font-bold font-headline text-foreground">
                 Our Guiding Principles
             </h2>
-            <p className="text-muted-foreground mt-2">The foundation upon which Verve Curations is built, ensuring every piece we offer is one we're proud of.</p>
+            <p className="text-muted-foreground mt-2">The foundation upon which Verve Curations is built, ensuring every piece we offer is one we&apos;re proud of.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {philosophy.map((item, index) => (

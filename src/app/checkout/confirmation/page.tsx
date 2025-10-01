@@ -44,7 +44,7 @@ const ConfirmationContent = () => {
                 className="mt-3 text-muted-foreground animate-fade-in-up"
                 style={{ animationDelay: '0.6s', animationFillMode: 'both' }}
             >
-                Your order is confirmed. You'll receive a confirmation email with your order details shortly.
+                Your order is confirmed. You&apos;ll receive a confirmation email with your order details shortly.
             </p>
             <div 
                 className="mt-6 animate-fade-in-up"

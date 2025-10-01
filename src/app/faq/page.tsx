@@ -46,7 +46,7 @@ export default function FAQPage() {
           <div className="text-center mb-12 animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl font-bold font-headline text-foreground">Frequently Asked Questions</h1>
             <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-                Have a question? We've compiled a list of our most common inquiries to help you out.
+                Have a question? We&apos;ve compiled a list of our most common inquiries to help you out.
             </p>
           </div>
           
@@ -68,7 +68,7 @@ export default function FAQPage() {
           <div 
             className="text-center mt-16 p-8 bg-secondary/30 rounded-lg max-w-3xl mx-auto"
           >
-            <h2 className="text-2xl font-headline font-semibold mb-4">Can't find your answer?</h2>
+            <h2 className="text-2xl font-headline font-semibold mb-4">Can&apos;t find your answer?</h2>
             <p className="text-muted-foreground mb-6">Our team is here to help. Reach out to us directly for any further questions.</p>
             <Button asChild size="lg" className="h-12 px-8 font-bold">
                 <Link href="/contact">CONTACT US</Link>

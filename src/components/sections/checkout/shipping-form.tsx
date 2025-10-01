@@ -25,7 +25,7 @@ const shippingSchema = z.object({
   phone: z.string().optional(),
 });
 
-type ShippingFormValues = z.infer<typeof shippingSchema>;
+export type ShippingFormValues = z.infer<typeof shippingSchema>;
 
 type ShippingFormProps = {
   onContinue: () => void;

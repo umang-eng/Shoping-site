@@ -27,7 +27,7 @@ const EmptyCart = () => {
             className="mt-3 text-muted-foreground max-w-sm mx-auto"
             style={{ animation: 'fade-in-up 0.5s ease-out 0.6s forwards', opacity: 0 }}
           >
-            Discover our collections to find something you'll love.
+            Discover our collections to find something you&apos;ll love.
           </p>
           <div 
             className="mt-8"
