@@ -46,7 +46,7 @@ const HeroSection = () => {
           className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-8 text-balance"
           style={{ animation: 'fade-in-up 0.8s ease-out 1s forwards', opacity: 0 }}
         >
-          Discover artisanal goods, timeless apparel, and unique decor from the world's finest creators.
+          Discover artisanal goods, timeless apparel, and unique decor from the world&apos;s finest creators.
         </p>
         <div
           style={{ animation: 'fade-in-up 0.8s ease-out 1.2s forwards', opacity: 0 }}

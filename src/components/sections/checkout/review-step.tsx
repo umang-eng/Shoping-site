@@ -6,9 +6,12 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Loader2 } from 'lucide-react';
 
+import { ShippingFormValues } from './shipping-form';
+import { PaymentFormValues } from './payment-form';
+
 type ReviewStepProps = {
-  shippingData: any;
-  paymentData: any;
+  shippingData: ShippingFormValues | null;
+  paymentData: PaymentFormValues | null;
   onEditShipping: () => void;
   onEditPayment: () => void;
 };
@@ -18,6 +21,9 @@ const ReviewStep = ({ shippingData, paymentData, onEditShipping, onEditPayment }
   const [isPlacingOrder, setIsPlacingOrder] = useState(false);
 
   const handlePlaceOrder = () => {
+    if (!shippingData) {
+      return;
+    }
     setIsPlacingOrder(true);
     // Simulate API call
     setTimeout(() => {

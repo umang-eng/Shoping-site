@@ -24,12 +24,14 @@ const paymentSchema = z.object({
   cvv: z.string().min(3).max(4, "Invalid CVV."),
 });
 
-type PaymentFormValues = z.infer<typeof paymentSchema>;
+import { ShippingFormValues } from './shipping-form';
+
+export type PaymentFormValues = z.infer<typeof paymentSchema>;
 
 type PaymentFormProps = {
   onContinue: () => void;
-  setPaymentData: (data: any) => void;
-  shippingData: any;
+  setPaymentData: (data: PaymentFormValues) => void;
+  shippingData: ShippingFormValues | null;
   onEdit: () => void;
 };
 

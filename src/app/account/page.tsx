@@ -28,7 +28,7 @@ export default function DashboardPage() {
         <Card>
           <CardHeader>
             <CardTitle>Recent Order</CardTitle>
-            <CardDescription>Here's the latest on your purchase.</CardDescription>
+            <CardDescription>Here&apos;s the latest on your purchase.</CardDescription>
           </CardHeader>
           <CardContent>
             {recentOrder ? (

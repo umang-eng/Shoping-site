@@ -59,9 +59,9 @@ const ContactPage = () => {
                 className="relative z-10 px-6 max-w-2xl mx-auto animate-fade-in-up"
                 style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
             >
-                <h1 className="text-4xl md:text-5xl font-bold font-headline text-balance">We're Here to Help.</h1>
+                <h1 className="text-4xl md:text-5xl font-bold font-headline text-balance">We&apos;re Here to Help.</h1>
                 <p className="mt-4 text-lg text-foreground/80 text-balance">
-                    Whether you have a question about an order, our artisans, or just want to share your thoughts, we'd love to hear from you.
+                    Whether you have a question about an order, our artisans, or just want to share your thoughts, we&apos;d love to hear from you.
                 </p>
             </div>
         </section>
@@ -76,7 +76,7 @@ const ContactPage = () => {
                             <h3 className="text-2xl font-headline font-semibold mb-6">More Ways to Connect</h3>
                             <div className="space-y-6 text-foreground/80">
                                 <p>
-                                    For immediate answers, you might find what you're looking for on our <Link href="/faq" className="font-bold text-primary hover:underline">FAQ Page</Link>.
+                                    For immediate answers, you might find what you&apos;re looking for on our <Link href="/faq" className="font-bold text-primary hover:underline">FAQ Page</Link>.
                                 </p>
                                 <a href="mailto:support@vervecurations.com" className="flex items-center gap-4 group">
                                     <Mail className="h-6 w-6 text-primary shrink-0"/>
@@ -103,7 +103,7 @@ const ContactPage = () => {
                         {isSubmitted ? (
                             <div className="flex flex-col items-center justify-center text-center bg-secondary/30 rounded-lg p-12 min-h-[400px] animate-fade-in">
                                 <h3 className="text-2xl font-headline font-semibold text-primary">Thank you!</h3>
-                                <p className="mt-2 text-foreground/80">We've received your message and will be in touch within one business day.</p>
+                                <p className="mt-2 text-foreground/80">We&apos;ve received your message and will be in touch within one business day.</p>
                             </div>
                         ) : (
                             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">

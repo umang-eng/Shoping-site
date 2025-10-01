@@ -39,13 +39,13 @@ const FounderJourney = () => {
             <h3 className="font-headline text-3xl font-semibold text-foreground mb-4">It Started with a Single Piece.</h3>
             <div className="prose prose-invert max-w-none text-foreground/80 space-y-4">
               <p>
-                Our story isn't one of boardrooms and business plans. It began in a dusty market stall, halfway across the world, with a single hand-carved wooden bowl. It was imperfect, yet flawless. It held the weight of the wood, the mark of the maker's tool, and the soul of a tradition passed down through generations.
+                Our story isn&apos;t one of boardrooms and business plans. It began in a dusty market stall, halfway across the world, with a single hand-carved wooden bowl. It was imperfect, yet flawless. It held the weight of the wood, the mark of the maker&apos;s tool, and the soul of a tradition passed down through generations.
               </p>
               <p>
                 That single piece sparked a journey—a quest to find more objects that tell a story. Verve Curations was born from a desire to connect these beautiful, authentic creations with people who appreciate them. We travel the globe, not as tourists, but as story-seekers, building real relationships with the artisans who pour their hearts into their work.
               </p>
                <p>
-                We believe that the items we bring into our homes should be more than just things; they should be conversation starters, daily reminders of beauty, and a direct link to the hands that made them. This is more than a store; it's a curated gallery of global craftsmanship, brought right to your doorstep.
+                We believe that the items we bring into our homes should be more than just things; they should be conversation starters, daily reminders of beauty, and a direct link to the hands that made them. This is more than a store; it&apos;s a curated gallery of global craftsmanship, brought right to your doorstep.
               </p>
             </div>
           </div>

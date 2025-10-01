@@ -6,8 +6,8 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import ProgressIndicator from '@/components/sections/checkout/progress-indicator';
 import CheckoutOrderSummary from '@/components/sections/checkout/checkout-order-summary';
-import ShippingForm from '@/components/sections/checkout/shipping-form';
-import PaymentForm from '@/components/sections/checkout/payment-form';
+import ShippingForm, { ShippingFormValues } from '@/components/sections/checkout/shipping-form';
+import PaymentForm, { PaymentFormValues } from '@/components/sections/checkout/payment-form';
 import ReviewStep from '@/components/sections/checkout/review-step';
 import type { CartItem } from '@/app/cart/page';
 import { getAllProducts } from '@/lib/product-data';
@@ -24,8 +24,8 @@ type CheckoutStep = 'shipping' | 'payment' | 'review';
 
 export default function CheckoutPage() {
   const [currentStep, setCurrentStep] = useState<CheckoutStep>('shipping');
-  const [shippingData, setShippingData] = useState(null);
-  const [paymentData, setPaymentData] = useState(null);
+  const [shippingData, setShippingData] = useState<ShippingFormValues | null>(null);
+  const [paymentData, setPaymentData] = useState<PaymentFormValues | null>(null);
 
   const goToNextStep = () => {
     if (currentStep === 'shipping') setCurrentStep('payment');

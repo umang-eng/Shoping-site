@@ -69,7 +69,7 @@ export default function NotFound() {
                 className="max-w-md text-foreground/80 mb-8"
                 style={{ animation: 'fade-in-up 0.8s ease-out 0.6s forwards', opacity: 0 }}
             >
-                It seems the piece you were looking for isn't here. Perhaps it's a unique creation that hasn't been discovered yet. Let's guide you back to our curated collection.
+                It seems the piece you were looking for isn&apos;t here. Perhaps it&apos;s a unique creation that hasn&apos;t been discovered yet. Let&apos;s guide you back to our curated collection.
             </p>
 
             <div 
